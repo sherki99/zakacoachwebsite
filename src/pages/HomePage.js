@@ -28,7 +28,7 @@ const HomePage = () => {
             </section>
 
             <div className="divider"></div> 
-v    
+  
             <section className="project-background-section">
 
                <div className="image-container">
@@ -57,6 +57,7 @@ v
 
 
             </section>
+
             <div className="divider"></div> {/* The orange line divider */}
 
             <section className="survey-section">
