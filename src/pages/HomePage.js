@@ -114,8 +114,8 @@ const HomePage = () => {
                         </address>
                     </div>
                     <div className="footer-block">
-                        <h4>ABOUT</h4>
-                        {/* Social icons would be inserted here */}
+             
+                        {/*           <h4>ABOUT</h4>    Social icons would be inserted here */}
                     </div>
                 </div>
                 <div className="footer-bottom">

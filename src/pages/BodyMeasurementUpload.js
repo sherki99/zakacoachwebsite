@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './BodyMeasurementUpload.css';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate  } from 'react-router-dom';
 import { db } from './firebaseConfig'; // Ensure the path is correct
 import { doc, updateDoc } from 'firebase/firestore';
 import { storage } from './firebaseConfig'; // Update the path as necessary
@@ -11,6 +11,9 @@ const BodyMeasurementUpload = () => {
     const [frontSideImage, setFrontSideImage] = useState(null);
     const [rightSideImage, setRightSideImage] = useState(null);
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+    const navigate = useNavigate(); // for navigation
+    const [isLoading, setIsLoading] = useState(false);
+    
 
     const { documentId } = useParams(); 
 
@@ -21,6 +24,13 @@ const BodyMeasurementUpload = () => {
     const handleRightSideChange = (event) => {
         setRightSideImage(event.target.files[0]);
     };
+
+    const handleCloseSuccessMessage = () => {
+        setShowSuccessMessage(false);
+        navigate('/'); // Navigate to home page. Change this to your home route
+    };
+
+
 
     const uploadImage = async (imageFile, userId) => {
         if (!imageFile) return null;
@@ -42,12 +52,18 @@ const BodyMeasurementUpload = () => {
         }
     };
 
+
+
     
 
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         // Handle the form submission, image upload, and save image info to Firestore
+
+
+        setIsLoading(true); // Start loading
+
 
         try {
             // Assuming you have a method to handle the image upload and get the URL
@@ -60,13 +76,14 @@ const BodyMeasurementUpload = () => {
                 rightSideImage: rightImageUrl,
             });
 
-            
-        setShowSuccessMessage(true);
+            setIsLoading(false); // Stop loading
+            setShowSuccessMessage(true);
 
             // Navigate to the next page or show a success message
         } catch (error) {
             console.error("Error updating document:", error);
-            setShowSuccessMessage(false);
+            setIsLoading(false); // Stop loading on error
+
         }
     };
 
@@ -107,11 +124,26 @@ const BodyMeasurementUpload = () => {
             </section>
 
             {showSuccessMessage && (
-            <div className="success-message">
-                <p>Thank you! Your images have been uploaded successfully.</p>
-                <p>You will receive a personalized workout plan within the next 20 working days.</p>
-            </div>
-        )}
+            <div className="message-overlay">
+            <div className="message-box">
+                                <p>Thank you! Your images have been uploaded successfully.</p>
+                                <p>You will receive a personalized workout plan within the next 20 working days.</p>
+                        <button onClick={handleCloseSuccessMessage} className="close-success-message">Close</button>
+                    </div>
+                </div>
+            )}
+
+            {isLoading && (
+                <div className="message-overlay">
+                    <div className="message-box">
+                        <h2>Processing Your Request</h2>
+                        <p>Please wait while we process your images. This might take a few moments.</p>
+                    </div>
+                </div>
+            )}
+
+
+
 
         </div>
     );

@@ -10,14 +10,33 @@ const NutritionDetails = () => {
         dailyDiet: '',
         mealPrepFrequency: '',
         supplements: '',
-        additionalInfo: ''
+        additionalInfo: '',
+        mealSizePreference: '',
+        foodVarietyPreference: '',
+        foodAllergies: '' ,
+        foodAllergiesDetails: ''
     });
+
+
+    const [showAllergyDetails, setShowAllergyDetails] = useState(false); // New state
+
 
     const { documentId } = useParams();
     const navigate = useNavigate();
 
     const handleChange = (event) => {
+
+
+
         const { id, value } = event.target;
+
+        
+        // Check if the foodAllergies field is being updated to toggle the text area
+        if (id === "foodAllergies") {
+            setShowAllergyDetails(value === "yes");
+        }
+
+
         setNutritionData({ ...nutritionData, [id]: value });
     };
 
@@ -71,28 +90,86 @@ const NutritionDetails = () => {
                     <div className="form-group">
                         <label htmlFor="meal-prep-frequency">Meal Preparation Frequency</label>
                         <select id="meal-prep-frequency" required onChange={handleChange}>
-                            <option value="">-- Select One --</option>
+                            <option value="">Select One</option>
                             <option value="once">Once a day</option>
-                            {/* Add more options if needed */}
+                            <option value="twice">Twice a day</option>
+                            <option value="fewTimesWeek">A few times a week</option>
+                            <option value="onceWeek">Once a week</option>
                         </select>
                     </div>
+
 
                     {/* Incorporate Supplements */}
                     <div className="form-group">
                         <label htmlFor="supplements">Incorporate Supplements in Diet</label>
                         <select id="supplements" required onChange={handleChange}>
-                            <option value="">-- Select One --</option>
+                            <option value="">Select One</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
                     </div>
 
+
+                    
+                 {/* Meal Size Preference */}
+                  <div className="form-group">
+                        <label htmlFor="mealSizePreference">Do you prefer eating fewer, larger meals or more frequent, smaller meals?</label>
+                        <select id="mealSizePreference" required onChange={handleChange}>
+                            <option value="">Select One</option>
+                            <option value="fewerLarger">Fewer, larger meals</option>
+                            <option value="moreFrequentSmaller">More frequent, smaller meals</option>
+                            <option value="noPreference">No preference</option>
+                        </select>
+                    </div>
+
+                    {/* Food Variety Preference */}
+                    <div className="form-group">
+                        <label htmlFor="foodVarietyPreference">Are you happy eating the same foods frequently or do you like a lot of variety?</label>
+                        <select id="foodVarietyPreference" required onChange={handleChange}>
+                            <option value="">Select One</option>
+                            <option value="sameFoods">I am happy eating the same foods frequently</option>
+                            <option value="variety">I like a lot of variety</option>
+                        </select>
+                    </div>
+
+                    {/* Food Allergies or Restrictions */}
+                    <div className="form-group">
+                        <label htmlFor="foodAllergies">Do you have any allergies or food restrictions that we should be aware of?</label>
+                        <select id="foodAllergies" required onChange={handleChange}>
+                            <option value="">Select One</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    {/* Conditional Text Area for Food Allergies Details */}
+                    {showAllergyDetails && (
+                        <div className="form-group">
+                            <label htmlFor="foodAllergiesDetails">Please specify your allergies or food restrictions:</label>
+                            <textarea 
+                                id="foodAllergiesDetails" 
+                                rows="4" 
+                                onChange={handleChange} 
+                                value={nutritionData.foodAllergiesDetails}
+                            ></textarea>
+                        </div>
+                    )}
+
+
+
                     {/* Additional Information */}
                     <div className="form-group">
                         <label htmlFor="additional-info">Any other information we should know regarding your nutrition?</label>
-                        <textarea id="additional-info" rows="4" onChange={handleChange}></textarea>
+                        <textarea 
+                            id="additional-info" 
+                            rows="4" 
+                            onChange={handleChange}
+                            placeholder="Please include any additional, relevant information here."
+                        ></textarea>
                     </div>
 
+
+                    {/* Final submission button */}
                     <button type="submit" className="next-btn">Next</button>
                 </form>
             </section>

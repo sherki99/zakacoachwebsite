@@ -6,12 +6,22 @@ import { doc, setDoc } from 'firebase/firestore';
 
 const WorkoutDetails = () => {
   const [formData, setFormData] = useState({
-    fitnessObjective: '',
+    fitnessObjective: 'muscle_gain',
     fitnessTargets: '',
     journeyDuration: '',
     currentRoutine: '',
     commitmentLevel: 'high',
     motivation: '',
+    significantInjuries: '',
+    weightTrainingExperience: '',
+    biggestObstacle: '',
+    workoutFrequency: '',
+    workoutDuration: '',
+    overallActivityLevel: '',
+    importanceOfFlexibility: '',
+    successVision: '',
+    specificMuscleGroups: '', 
+    previousWorkoutRegimens: '', 
   });
 
   const { documentId } = useParams();
@@ -55,10 +65,18 @@ const WorkoutDetails = () => {
       </section>
 
       {/* Form Section */}
-      <section className="form-section">
-        <form onSubmit={handleSubmit}>
-          {/* Primary fitness objective */}
-          <div className="form-group">
+{/* Form Section */}
+<section className="form-section">
+  <form onSubmit={handleSubmit}>
+    {/* Existing and new form fields */}
+    {/* Insert your existing form fields here */}
+
+    {/* Significant injuries */}
+    <div className="form-group">
+
+
+
+    <div className="form-group">
             <label htmlFor="fitnessObjective">What is your primary fitness objective?</label>
             <select
               id="fitnessObjective"
@@ -67,81 +85,141 @@ const WorkoutDetails = () => {
               onChange={handleChange}
               required
             >
-              <option value="">-- Select One --</option>
-              <option value="weight_loss">Weight Loss</option>
               <option value="muscle_gain">Muscle Gain</option>
-              <option value="improve_fitness">Improve Overall Fitness</option>
-              <option value="increase_strength">Increase Strength</option>
             </select>
           </div>
 
-          {/* Specific fitness targets */}
+
           <div className="form-group">
-            <label htmlFor="fitnessTargets">Have you set any specific targets for your fitness goal?</label>
+            <label htmlFor="specificMuscleGroups">Are there specific muscle groups you want to focus on?</label>
             <input
               type="text"
-              id="fitnessTargets"
-              name="fitnessTargets"
-              value={formData.fitnessTargets}
+              id="specificMuscleGroups"
+              name="specificMuscleGroups"
+              value={formData.specificMuscleGroups}
               onChange={handleChange}
+              placeholder="e.g., Arms, Legs, Back..."
             />
           </div>
 
-          {/* Fitness journey duration */}
-          <div className="form-group">
-            <label htmlFor="journeyDuration">How long have you been actively engaged in your fitness journey?</label>
-            <input
-              type="text"
-              id="journeyDuration"
-              name="journeyDuration"
-              value={formData.journeyDuration}
-              onChange={handleChange}
-            />
-          </div>
+      <label htmlFor="significantInjuries">Do you have any significant injuries?</label>
+      <select
+        id="significantInjuries"
+        name="significantInjuries"
+        value={formData.significantInjuries}
+        onChange={handleChange}
+        required
+      >
+        <option value="">-- Select One --</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
 
-          {/* Current workout routine */}
-          <div className="form-group">
-            <label htmlFor="currentRoutine">Are you currently following any workout routine or program?</label>
-            <input
-              type="text"
-              id="currentRoutine"
-              name="currentRoutine"
-              value={formData.currentRoutine}
-              onChange={handleChange}
-            />
-          </div>
+    {/* Weight training experience */}
+    <div className="form-group">
+      <label htmlFor="weightTrainingExperience">How would you classify your weight training experience?</label>
+      <select
+        id="weightTrainingExperience"
+        name="weightTrainingExperience"
+        value={formData.weightTrainingExperience}
+        onChange={handleChange}
+        required
+      >
+        <option value="">-- Select One --</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </div>
 
-          {/* Commitment level */}
-          <div className="form-group">
-            <label htmlFor="commitmentLevel">What is your current level of commitment to your fitness goals?</label>
-            <select
-              id="commitmentLevel"
-              name="commitmentLevel"
-              value={formData.commitmentLevel}
-              onChange={handleChange}
-              required
-            >
-              <option value="high">High</option>
-              <option value="moderate">Moderate</option>
-              <option value="low">Low</option>
-            </select>
-          </div>
+      {/* Biggest obstacle */}
+      <div className="form-group">
+        <label htmlFor="biggestObstacle">What is the #1 single biggest obstacle holding you back right now?</label>
+        <textarea
+          type="text"
+          id="biggestObstacle"
+          name="biggestObstacle"
+          value={formData.biggestObstacle}
+          onChange={handleChange}
+          placeholder="Describe your biggest obstacle..."
+        ></textarea>
+      </div>
 
-          {/* Motivation */}
-          <div className="form-group">
-            <label htmlFor="motivation">What motivates you the most to pursue your fitness goal?</label>
-            <input
-              type="text"
-              id="motivation"
-              name="motivation"
-              value={formData.motivation}
-              onChange={handleChange}
-            />
-          </div>
 
-          <button type="submit" className="next-btn">Next</button>
-        </form>
-      </section>
+    {/* Workout frequency */}
+    <div className="form-group">
+      <label htmlFor="workoutFrequency">How frequently would you be able to work out?</label>
+      <select
+        id="workoutFrequency"
+        name="workoutFrequency"
+        value={formData.workoutFrequency}
+        onChange={handleChange}
+        required
+      >
+        <option value="">-- Select One --</option>
+        <option value="2-3">2-3 days a week</option>
+        <option value="4-5">4-5 days a week</option>
+        <option value="6-7">6-7 days a week</option>
+      </select>
+    </div>
+
+    {/* Workout duration */}
+    <div className="form-group">
+      <label htmlFor="workoutDuration">How much time do you have for each workout?</label>
+      <select
+        id="workoutDuration"
+        name="workoutDuration"
+        value={formData.workoutDuration}
+        onChange={handleChange}
+        required
+      >
+        <option value="">-- Select One --</option>
+        <option value="<30">Less than 30 minutes</option>
+        <option value="30-60">30-60 minutes</option>
+        <option value="60-90">60-90 minutes</option>
+      </select>
+    </div>
+
+
+
+    {/* Importance of improving flexibility and mobility */}
+    <div className="form-group">
+      <label htmlFor="importanceOfFlexibility">How important is it for you to improve your flexibility and mobility?</label>
+      <select
+        id="importanceOfFlexibility"
+        name="importanceOfFlexibility"
+        value={formData.importanceOfFlexibility}
+        onChange={handleChange}
+        required
+      >
+        <option value="">-- Select One --</option>
+        <option value="notImportant">Not important</option>
+        <option value="somewhatImportant">Somewhat important</option>
+        <option value="important">Important</option>
+        <option value="veryImportant">Very important</option>
+      </select>
+    </div>
+
+    {/* Success vision */}
+    <div className="form-group">
+      <label htmlFor="successVision">What would success look like for you 3 months from now?</label>
+      <textarea
+        id="successVision"
+        name="successVision"
+        value={formData.successVision}
+        onChange={handleChange}
+        placeholder="Describe your vision of success..."
+      ></textarea>
+    </div>
+
+
+
+    {/* Final submission button */}
+    <button type="submit" className="next-btn">Next</button>
+  </form>
+</section>
+
 
       {/* Footer Section */}
       {/* ... (footer section code) */}

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './ParticipantInfoSheet.css'; // Make sure to create a corresponding CSS file for styling
+import './ParticipantInfoSheet.css';
 
 const ParticipantInfoSheet = () => {
     return (
