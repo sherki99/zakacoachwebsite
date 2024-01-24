@@ -27,7 +27,8 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Project Background Section */}
+            <div className="divider"></div> 
+v    
             <section className="project-background-section">
 
                <div className="image-container">

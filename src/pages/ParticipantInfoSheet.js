@@ -35,7 +35,7 @@ const ParticipantInfoSheet = () => {
             <h2>Data Protection and Anonymity</h2>
             <p>We place utmost importance on the privacy and security of your personal data. All information collected during this study will be anonymized and securely stored, complying with Italy(EU) data protection laws and regulations. The anonymized data may be utilized for further research and development of AI language models, with a strict commitment to maintaining privacy and ethical standards in all aspects of data handling.</p>
 
-            <h2>Compensation</h2>
+            <h2>Compensation</h2>  
             <p>While there is no financial compensation for participating in this study, your contribution is highly valuable to us. Your involvement provides critical insights that aid in advancing the fields of health, fitness, and AI research. Your participation is contributing to a future where technology and health converge for better personal wellness solutions.</p>
 
             <h2>Voluntary Participation</h2>
