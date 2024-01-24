@@ -1,0 +1,95 @@
+/* NutritionDetails.css */
+
+/* Import base styles from the homepage for consistency */
+@import './HomePage.css';
+
+/* Hero Section Styling */
+.nutrition-details-page .hero-section {
+    background-color: #ffffff;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6601; /* Adding a border for distinction */
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Form Section Styling */
+.form-section {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
+
+form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type='text'],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Style for the 'Next' button */
+.next-btn {
+    background-color: #ff6601; /* Consistent orange color */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.next-btn:hover,
+.next-btn:focus {
+    background-color: #cc5200; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift button effect on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .next-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

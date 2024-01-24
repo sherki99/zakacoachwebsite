@@ -1,0 +1,113 @@
+
+@import './HomePage.css';
+
+/* General Page Styling */
+.body-measurement-upload-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Instruction Section Styling */
+.instruction-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6601;
+}
+
+.instruction-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.instruction-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.instruction-section ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    padding-left: 40px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.instruction-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Photo Upload Section Styling */
+.photo-upload-section {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-group input[type='file'] {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    background-color: #ff6601;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #cc5200;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .instruction-section h1, .photo-upload-section h1 {
+        font-size: 2rem;
+    }
+
+    .instruction-section p, .instruction-section ul li, .photo-upload-section p {
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+
+.success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}

@@ -1,0 +1,324 @@
+/* Base styles */
+body, h1, h2, h3, p, ul, li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333; /* Dark grey text color for better readability */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Use a consistent box model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove default list styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Link styles */
+a {
+    color: inherit; /* Links use the text color */
+    text-decoration: none; /* No underlines on links */
+}
+
+/* Button reset */
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+}
+
+/* Make sure button cannot be dragged */
+button:active,
+button:focus {
+    outline: none;
+}
+
+/* Home Page Layout */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.get-started-btn {
+    background-color: #ff6601; /* Updated button color */
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.get-started-btn:hover,
+.get-started-btn:focus { /* Also include focus for accessibility */
+    background-color: #cc5200; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift button effect on hover */
+}
+
+/* Project Background Section */
+.project-background-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: #f7f7f7;
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    flex: 0 0 50%; /* Flex-basis with no shrinking */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%; /* Circular images */
+}
+
+.text-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.text-content h2,
+.text-content h3 {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.text-content p,
+.text-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Divider Style */
+.divider {
+    height: 0.5px;
+    background-color: #ff6601; /* Updated divider color */
+    width: 100%;
+
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.team-photo {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-block {
+    margin: 10px;
+    flex-basis: calc(33.333% - 20px);
+}
+
+.footer-block h4 {
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.footer-block p,
+.footer-block address {
+    color: #666;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    border-top: 1px solid #d1d1d1;
+    padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section,
+    .project-background-section,
+    .team-section,
+    .footer-section {
+        padding: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .get-started-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    .project-background-section,
+    .team-section {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .text-content {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-content,
+    .footer-block {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-block {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.survey-section {
+    background-color: #f7f7f7;
+    padding: 60px 20px; /* Increased padding for better spacing */
+    text-align: left;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.survey-section .content {
+    max-width: 800px; /* Increased max width for larger content */
+    margin: 0 auto; /* Center the content */
+}
+
+.survey-section h2 {
+    color: #000;
+    font-size: 2.5rem; /* Increased font size for the title */
+    margin-bottom: 30px; /* Increased space below the title */
+}
+
+.survey-section p {
+    font-size: 1.2rem; /* Increased font size for paragraphs */
+    margin-bottom: 20px; /* Adjusted space below paragraphs */
+}
+
+.survey-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.survey-section ul li {
+    font-size: 1.2rem; /* Increased font size for list items */
+    margin-bottom: 15px; /* Increased space between list items */
+}
+
+/* Adjusted button styles */
+.survey-section .get-started-btn {
+    background-color: #ff6601;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Inline display for the button */
+}
+
+.survey-section .get-started-btn:hover,
+.survey-section .get-started-btn:focus {
+    background-color: #cc5200;
+    transform: translateY(-2px);
+}

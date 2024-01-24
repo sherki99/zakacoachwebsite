@@ -1,0 +1,98 @@
+/* PersonalDetails.css */
+
+/* Import the base styles from the homepage to maintain consistency */
+@import './HomePage.css';
+
+/* Hero Section Styling */
+.personal-details-page .hero-section {
+    background-color: #ffffff;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6601; /* Adding a border for a distinct look */
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+/* Form Section Styling */
+.form-section {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type='email'],
+.form-group input[type='number'],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Style the submit button */
+.submit-btn {
+    background-color: #ff6601; /* Orange color like homepage */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #cc5200; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift button effect on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

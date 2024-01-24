@@ -1,0 +1,92 @@
+.consent-form-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.consent-form h1 {
+    color: #333;
+    text-align: center;
+}
+
+.consent-form p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.consent-list {
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0;
+}
+
+.consent-list li {
+    counter-increment: item;
+    margin-bottom: 10px;
+}
+
+.consent-list li::before {
+    content: counter(item) ". ";
+    font-weight: bold;
+}
+
+.checkbox-container {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.agree-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff6601;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.agree-button:hover {
+    background-color: #e65a00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .consent-form-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .agree-button {
+        padding: 0.8rem;
+    }
+}
+
+
+/* Add this to your ParticipantConsentForm.css file */
+
+/* Styling for links */
+.consent-form a {
+    color: #007bff; /* Change this color to your preference */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+/* Hover effect */
+.consent-form a:hover {
+    color: #0056b3; /* Change this color for hover state */
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+/* Visited link color */
+.consent-form a:visited {
+    color: #6f42c1; /* Change this color for visited links */
+}

@@ -1,0 +1,72 @@
+/* FitnessResearchInitiative.css */
+
+.fitness-research-initiative-page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.fitness-research-initiative-page h1 {
+    font-size: 2.5rem;
+    color: #000000; /* Matching the theme color */
+    margin-bottom: 30px;
+}
+
+.fitness-research-initiative-page p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #444; /* Slightly darker for readability */
+}
+/* Additional CSS in FitnessResearchInitiative.css */
+
+.highlighted-text {
+    background-color: #ffeb3b; /* Light yellow background for emphasis */
+    color: #333; /* Optional: change text color if needed */
+    padding: 2px 5px; /* Padding for background color */
+    border-radius: 4px; /* Rounded corners for the background */
+}
+
+
+.start-survey-btn {
+    background-color: #ff6601; /* Theme color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.start-survey-btn:hover {
+    background-color: #cc5200; /* Darker shade on hover */
+    transform: translateY(-2px); /* Button lift effect */
+}
+
+@media (max-width: 768px) {
+    .fitness-research-initiative-page {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .fitness-research-initiative-page h1 {
+        font-size: 2rem;
+    }
+
+    .fitness-research-initiative-page p {
+        font-size: 1rem;
+    }
+
+    .start-survey-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}

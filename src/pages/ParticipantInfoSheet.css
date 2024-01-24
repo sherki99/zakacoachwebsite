@@ -1,0 +1,50 @@
+.participant-info-sheet {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.participant-info-sheet h1 {
+    color: #2a2a72;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.participant-info-sheet h2 {
+    color: #2a2a72;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.participant-info-sheet h3 {
+    color: #4a4a4a;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.participant-info-sheet p, .participant-info-sheet ul {
+    color: #4a4a4a;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.participant-info-sheet ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.participant-info-sheet a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.participant-info-sheet a:hover {
+    text-decoration: underline;
+}
