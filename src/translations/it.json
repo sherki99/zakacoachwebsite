@@ -1,0 +1,231 @@
+{
+  "heroSection": {
+    "title": "Contribuisci alla Ricerca Sanitaria Innovativa: Confronto tra Piani AI ed Esperti",
+    "description": "Benvenuti su Zaka Coach, uno studio rivoluzionario presso l'Università di Anglia Ruskin che esamina l'efficacia dell'IA nella pianificazione della salute. Unisciti a noi per confrontare i piani fitness e alimentari creati dall'IA e quelli progettati dagli esperti. La tua partecipazione fornisce preziose intuizioni, contribuendo a plasmare il futuro delle soluzioni personalizzate per la salute e il fitness.",
+    "getStartedButton": "INIZIA ORA"
+  },
+  "projectBackground": {
+    "imageAltWoman": "Donna che si allunga",
+    "title": "Contesto del Progetto",
+    "subtitle": "Rivoluzionare il Fitness con l'IA: Uno Studio Comparativo",
+    "paragraph": "Nel nostro studio, stiamo investigando sull'efficacia dei piani fitness e alimentari generati dall'IA rispetto a quelli creati da istruttori personali esperti. Gli aspetti chiave della nostra ricerca includono:",
+    "bullet1Title": "Analisi Comparativa:",
+    "bullet1Text": "Valutare l'efficacia dell'IA nella creazione di piani personalizzati per la salute rispetto all'input umano esperto.",
+    "bullet2Title": "Piani Esperti Gratuiti:",
+    "bullet2Text": "Offrire ai partecipanti piani alimentari e di allenamento gratuiti progettati da istruttori personali professionisti.",
+    "conclusion": "Il nostro obiettivo è unire l'innovazione tecnologica con la conoscenza esperta, migliorando il modo in cui vengono affrontate la salute e il fitness personali, a beneficio dei percorsi individuali di benessere."
+  },
+  "surveySection": {
+    "title": "Compila il Nostro Sondaggio",
+    "description": "Stiamo cercando partecipanti maschi di età compresa tra 18 e 35 anni interessati al guadagno muscolare e all'aumento delle dimensioni. Le tue opinioni saranno fondamentali per valutare e migliorare i piani fitness e alimentari generati dall'IA. Cerchiamo persone che:",
+    "bullet1": "Siano maschi di età compresa tra 18 e 35 anni.",
+    "bullet2": "Abbiano come obiettivo il guadagno muscolare o l'aumento delle dimensioni.",
+    "bullet3": "Siano interessate a esplorare strategie innovative per il fitness e la nutrizione.",
+    "conclusion": "La partecipazione a questo sondaggio è completamente volontaria, e tutte le tue risposte rimarranno confidenziali.",
+    "getStartedButton": "INIZIA ORA"
+  },
+  "teamSection": {
+    "title": "Il Nostro Team",
+    "cherkiAlt": "Cherki Meziane",
+    "cherkiName": "Cherki Meziane",
+    "cherkiTitle": "Ricercatore presso l'Università di Anglia Ruskin",
+    "cherkiDescription": "Cherki, attualmente immerso nel mondo dell'apprendimento automatico, fonde in modo fluido la sua profonda passione per il fitness con la tecnologia all'avanguardia, creando percorsi innovativi nel campo della salute e del benessere.",
+    "phillAlt": "Phillip Kasozi",
+    "phillName": "Phillip Kasozi",
+    "phillTitle": "Direttore presso Kasozi Wellbeing",
+    "phillDescription": "Un ex studente di scienze dello sport presso l'Università di Manchester, Phill ora dirige Kasozi Wellbeing, dove canalizza la sua profonda conoscenza delle scienze dello sport e la sua passione per il benessere nella creazione di cambiamenti positivi nella salute sul luogo di lavoro."
+  },
+  "footerSection": {
+    "findUs": "TROVACI",
+    "email": "Email:",
+    "emailLink": "cm1557@student.aru.ac.uk",
+    "visitUs": "VISITA IL NOSTRO SITO",
+    "address": "Università di Anglia Ruskin,\nEast Rd,\nCambridge\nCB1 1PT\nRegno Unito",
+    "copyright": "Copyright © 2021 Zaka Coach"
+  },
+  "fitnessResearchInitiative": {
+    "title": "Partecipa alla Nostra Iniziativa di Ricerca sulla Fitness",
+    "paragraph1": "Siamo un team di Zaka Coach, al lavoro su un progetto all'avanguardia per integrare l'intelligenza artificiale con il fitness personalizzato. Stiamo raccogliendo dati per capire come diverse persone rispondano a varie routine di allenamento e piani alimentari.",
+    "paragraph2": "La tua partecipazione implica rispondere a domande sulle tue abitudini e preferenze legate al fitness. Con 'risposte' si intendono qualsiasi cambiamenti evidenti nel tuo stato fisico o mentale attribuibili alle tue attività fisiche.",
+    "paragraph3": "Ogni contributo è fondamentale. Con il tuo aiuto, la nostra intelligenza artificiale può imparare a fare raccomandazioni precise, adattandosi alle esigenze individuali e migliorando la personalizzazione dei piani di fitness.",
+    "paragraph4": "Se hai una passione per il fitness e sei curioso riguardo al potenziale dell'intelligenza artificiale nel trasformare la salute e l'esercizio fisico, le tue opinioni sono preziose per noi.",
+    "paragraph5": "Completando il sondaggio, riceverai in premio un piano alimentare personalizzato e un programma di allenamento progettato da esperti personal trainers, creati per sostenere ed elevare il tuo percorso di fitness.",
+    "startSurveyButton": "Inizia il Sondaggio e Richiedi il Tuo Piano"
+},
+
+
+
+
+
+"participantConsentForm": {
+  "title": "Modulo di Consenso del Partecipante",
+  "instructions": "La tua partecipazione al nostro studio è fondamentale per avanzare nella personalizzazione del fitness. Leggi e accetta le seguenti dichiarazioni.",
+  "statement1": "Ho letto il Foglio di Informazioni per il Partecipante e le mie domande sono state soddisfacentemente risposte.",
+  "statement2": "La mia partecipazione è volontaria e posso ritirarmi in qualsiasi momento senza dover fornire una motivazione, senza che i miei diritti legali vengano influenzati.",
+  "statement3": "I dati raccolti possono essere inclusi in forma anonima in pubblicazioni o presentazioni derivanti da questa ricerca.",
+  "statement4": "Un set di dati completamente anonimo potrebbe essere reso disponibile pubblicamente in un repository dati dopo la conclusione dello studio.",
+  "statement5": "Il personale rilevante di ARUI o le autorità regolamentari potrebbero esaminare i dati raccolti come parte dei loro compiti.",
+  "statement6": "Comprendo i benefici della partecipazione e accetto di prendere parte a questo studio.",
+  "consentToItems": "Accetto gli elementi da 1 a 6 sopra elencati.",
+  "confirmAge": "Confermo di avere 18 anni o più.",
+  "pleaseSelectCheckboxes": "Seleziona entrambe le caselle di controllo per procedere.",
+  "agreeAndContinue": "Accetta e Continua"
+},
+
+
+
+"personalDetails": {
+  "title": "Dati Personali",
+  "instructions": "Aiutaci a personalizzare un piano fitness per te fornendo i tuoi dettagli.",
+  "emailLabel": "Email",
+  "ageLabel": "Età",
+  "genderLabel": "Genere",
+  "selectGender": "Seleziona",
+  "male": "Maschio",
+  "female": "Femmina",
+  "other": "Altro",
+  "heightLabel": "Altezza (cm)",
+  "weightLabel": "Peso (kg)",
+  "medicalConditionsLabel": "Hai condizioni mediche di cui dovremmo essere a conoscenza?",
+  "submitButton": "Avanti",
+  "emailExistsErrorMessage": "L'indirizzo email esiste già. Si prega di utilizzare un indirizzo email diverso."
+},
+
+
+"workoutDetails": {
+  "title": "Dettagli dell'Allenamento",
+  "description": "Raccontaci del tuo percorso fitness per aiutarci a creare un piano di allenamento personalizzato per te.",
+  "fitnessObjectiveLabel": "Qual è il tuo obiettivo principale di fitness?",
+  "fitnessObjectiveOptions": {
+    "muscleGain": "Guadagno di Muscoli"
+  },
+  "specificMuscleGroupsLabel": "Ci sono gruppi muscolari specifici su cui vuoi concentrarti?",
+  "specificMuscleGroupsPlaceholder": "Esempio: Braccia, Gambe, Schiena...",
+  "significantInjuriesLabel": "Hai subito lesioni significative?",
+  "significantInjuriesOptions": {
+    "selectOne": "-- Seleziona una --",
+    "yes": "Sì",
+    "no": "No"
+  },
+  "weightTrainingExperienceLabel": "Come classificheresti la tua esperienza con il sollevamento pesi?",
+  "weightTrainingExperienceOptions": {
+    "selectOne": "-- Seleziona una --",
+    "beginner": "Principiante",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzato"
+  },
+  "biggestObstacleLabel": "Qual è l'ostacolo più grande che ti trattiene al momento?",
+  "biggestObstaclePlaceholder": "Descrivi il tuo ostacolo più grande...",
+  "workoutFrequencyLabel": "Con quale frequenza potresti allenarti?",
+  "workoutFrequencyOptions": {
+    "selectOne": "-- Seleziona una --",
+    "2-3": "2-3 giorni a settimana",
+    "4-5": "4-5 giorni a settimana",
+    "6-7": "6-7 giorni a settimana"
+  },
+  "workoutDurationLabel": "Quanto tempo hai a disposizione per ogni allenamento?",
+  "workoutDurationOptions": {
+    "selectOne": "-- Seleziona una --",
+    "lessThan30": "Meno di 30 minuti",
+    "30-60": "30-60 minuti",
+    "60-90": "60-90 minuti"
+  },
+  "importanceOfFlexibilityLabel": "Quanto è importante per te migliorare la tua flessibilità e mobilità?",
+  "importanceOfFlexibilityOptions": {
+    "selectOne": "-- Seleziona una --",
+    "notImportant": "Non importante",
+    "somewhatImportant": "Un po' importante",
+    "important": "Importante",
+    "veryImportant": "Molto importante"
+  },
+  "successVisionLabel": "Come immagini il successo per te tra 3 mesi?",
+  "successVisionPlaceholder": "Descrivi la tua visione del successo...",
+  "submitButton": "Avanti"
+},
+
+"nutritionDetails": {
+  "title": "Dettagli Nutrizionali",
+  "description": "Facci conoscere le tue abitudini alimentari per consentirci di creare un piano alimentare personalizzato per te.",
+  "physicalActivityLabel": "Livello di Attività Fisica",
+  "selectPhysicalActivity": "Seleziona il tuo livello attuale di attività fisica",
+  "sedentary": "Sedentario",
+  "lightActivity": "Attività Leggera",
+  "moderateActivity": "Attività Moderata",
+  "highActivity": "Alta Attività",
+  "dailyDietLabel": "Dieta Giornaliera Abituale",
+  "dailyDietPlaceholder": "Descrivi la tua dieta giornaliera tipica.",
+  "mealPrepFrequencyLabel": "Frequenza della Preparazione dei Pasti",
+  "selectMealPrepFrequency": "Seleziona Uno",
+  "onceADay": "Una volta al giorno",
+  "twiceADay": "Due volte al giorno",
+  "fewTimesAWeek": "Qualche volta a settimana",
+  "onceAWeek": "Una volta a settimana",
+  "incorporateSupplementsLabel": "Includi Integratori nella Dieta",
+  "selectSupplements": "Seleziona Uno",
+  "yes": "Sì",
+  "no": "No",
+  "mealSizePreferenceLabel": "Preferisci mangiare pasti più grandi ma meno frequenti o più frequenti ma più piccoli?",
+  "selectMealSizePreference": "Seleziona Uno",
+  "fewerLargerMeals": "Pasti più grandi ma meno frequenti",
+  "moreFrequentSmallerMeals": "Pasti più frequenti ma più piccoli",
+  "noPreference": "Nessuna preferenza",
+  "foodVarietyPreferenceLabel": "Ti piace mangiare gli stessi cibi frequentemente o preferisci avere molta varietà?",
+  "selectFoodVarietyPreference": "Seleziona Uno",
+  "sameFoods": "Sono felice di mangiare gli stessi cibi frequentemente",
+  "variety": "Mi piace molta varietà",
+  "foodAllergiesLabel": "Hai allergie o restrizioni alimentari di cui dovremmo essere a conoscenza?",
+  "selectFoodAllergies": "Seleziona Uno",
+  "foodAllergiesDetailsLabel": "Specifica le tue allergie o restrizioni alimentari:",
+  "additionalInfoLabel": "Altre informazioni che dovremmo conoscere sulla tua alimentazione?",
+  "additionalInfoPlaceholder": "Includi qui qualsiasi altra informazione rilevante.",
+  "submitButton": "Avanti"
+},
+
+
+"bodyMeasurementUpload": {
+  "title": "Carica Foto delle Misure del Corpo",
+  "instructions": "Per garantire l'accuratezza delle misure del corpo, segui le linee guida di seguito quando scatti le tue foto:",
+  "instruction1": "Stai contro uno sfondo semplice con illuminazione sufficiente.",
+  "instruction2": "Indossa abiti aderenti per consentire una chiara visibilità dei contorni del corpo.",
+  "instruction3": "Tieni la fotocamera ferma all'altezza della zona centrale del corpo.",
+  "instruction4": "Assicurati che l'intero corpo sia visibile nel fotogramma, dalla testa ai piedi.",
+  "uploadFrontSide": "Carica Fronte",
+  "uploadRightSide": "Carica Lato Destro",
+  "submitButton": "Invia",
+  "successMessage1": "Grazie! Le tue immagini sono state caricate con successo.",
+  "successMessage2": "Riceverai un piano di allenamento personalizzato entro i prossimi 20 giorni lavorativi.",
+  "closeButton": "Chiudi",
+  "loadingMessage": "Elaborazione della Tua Richiesta",
+  "loadingDescription": "Attendi mentre elaboriamo le tue immagini. Ciò potrebbe richiedere alcuni istanti."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
