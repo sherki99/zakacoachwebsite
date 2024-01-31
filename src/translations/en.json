@@ -195,24 +195,9 @@
     "closeButton": "Close",
     "loadingMessage": "Processing Your Request",
     "loadingDescription": "Please wait while we process your images. This might take a few moments."
-  },
-
-  "bodyMeasurementUpload": {
-    "title": "Carica Foto delle Misure del Corpo",
-    "instructions": "Per garantire l'accuratezza delle misure del corpo, segui le linee guida di seguito quando scatti le tue foto:",
-    "instruction1": "Stai contro uno sfondo semplice con illuminazione sufficiente.",
-    "instruction2": "Indossa abiti aderenti per consentire una chiara visibilità dei contorni del corpo.",
-    "instruction3": "Tieni la fotocamera ferma all'altezza della zona centrale del corpo.",
-    "instruction4": "Assicurati che l'intero corpo sia visibile nel fotogramma, dalla testa ai piedi.",
-    "uploadFrontSide": "Carica Fronte",
-    "uploadRightSide": "Carica Lato Destro",
-    "submitButton": "Invia",
-    "successMessage1": "Grazie! Le tue immagini sono state caricate con successo.",
-    "successMessage2": "Riceverai un piano di allenamento personalizzato entro i prossimi 20 giorni lavorativi.",
-    "closeButton": "Chiudi",
-    "loadingMessage": "Elaborazione della Tua Richiesta",
-    "loadingDescription": "Attendi mentre elaboriamo le tue immagini. Ciò potrebbe richiedere alcuni istanti."
   }
+
+  
 
 
 
